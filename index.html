@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Découvrez mon CV" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+	<!--feuille de style pour impression-->
+	<link rel="icon" href="images/favicon.png" sizes="32x32">
+	<script src="https://kit.fontawesome.com/836800d8d5.js" crossorigin="anonymous"></script>
+	<!--Kit Front Awesome-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Economica%7CMontserrat%7CSource+Sans+Pro:400,600%7CYantramanav:100,300,400&display=swap"
+		rel="stylesheet">
+	<!--Google Fonts-->
+	<title>SAMNE Gildas Bienvenu - CV</title>
+</head>
+
+<body>
+
+	<div id="bloc_page">
+		<!--Englobe tous le contenu de la page. Permets de fixer facilement les dimensions de la page et de centrer le site Contient l'aside "lisere" et la section page centrale-->
+
+		<aside id="lisere">
+			<!--La zone aside comporte la photo, les informations de contact, un "à propos" et les loisirs sous forme d'icones-->
+			<!--En format mobile, la photo n'y apparait plus et vient se placer dans "Head"-->
+
+			<div id="cadre_photo">
+				<!--Contient un lien sous forme de photo-->
+				<a href="Gildas.jpg"><img src="Gildas.jpg" alt="Photo d'identité de Gildas"
+						class="photo" /></a>
+			</div>
+
+			<article id="contact" title="Contact">
+				<!--Contient un titre, une liste-->
+				<h3 class="titre_aside_gras">IDENTITÉ</h3>
+				<ul class="liste">
+					<li>Nom <br /> SANME</li>
+					<li>Prénom <br /> Gildas Bienvenu</li>
+					<li>Date de naissance <br /> 30/01/2000</li>
+					<li>Lieu de naissance<br /> Ouagadougou</li>
+					<li>Situation matrimoniale <br /> Célibataire</li>
+					<li>Téléphone<br /><a href="tel:+22667434035">67 43 40 35</a></li>
+					<li>Email<br /><a href="samnegildas4@gmail.com">samnegildas4@gmail.com</a></li>
+					<li>Site web<br /><a href=https://Gildas2.github.io>Gildas2.github.io</a></li>
+				</ul>
+			</article>
+
+			<article id="a_contact" title="competences">
+				<!--Contient un titre et un paragraphe-->
+				<h3 class="titre_aside_gras">COMPÉTENCES</h3>
+				<ul class="liste">
+					<li>Travail en équipe</li>
+					<li>Rigoureux</li>
+					<li>Perfectionniste</li>
+					<li>Aime le travail bien fait</li>
+				</ul>
+	        </article>
+
+			<article id="a_contact" title="centre">
+				<!--Contient un titre et un paragraphe-->
+				<h3 class="titre_aside_gras">CENTRE D'INTÉRÊT</h3>
+				<ul class="liste">
+					<li>Lecture</li>
+					<li>Musique</li>
+					<li>Cinéma</li>
+				</ul>
+	        </article>
+
+		</aside>
+
+		<section id="page_centrale">
+			<!--La zone "page centrale" comporte le header, la section principale-->
+
+			<header>
+				<!--En version desktop celui ci ne contient que le h1+h2 / en version mobile la photo vient s'ajouter-->
+
+				<h1><span id="prenom">SAMNE</span> Gildas</h1>
+				<!--le span permet de différencier le style du prénom-->
+				<div id="titre">
+					<h2><span id="ligne_dev">Dével</span>oppeur</h2>
+				</div>
+				<!--le span permet de différencier le style d'une partie du mot Développeur-->
+
+				<!---N'apparait que sur mobile-->
+				<article id="cadre_photo_header">
+					<h3>Ma Photo</h3><a href="Gildas.jpg"><img src="Gildas.jpg"
+							alt="Photo d'identité de Gildas" class="photo_header" /></a>
+				</article>
+				<!---N'apparait que sur mobile-->
+
+			</header>
+
+			<div id="corps_page">
+				<!--Cette "section" est la principal et regroupe un titre et les 3 volets principaux du CV sous forme d'article (Formation+Experience+Recommandations)-->
+
+				<!--Chaque article (article_page) contient : un titre (titre_page) + une liste (liste_page)-->
+				<!--Chaque élément d'une liste contient un div "item_..."-->
+				<!--Un "item_" contient un div "bloc puce" + un div "paragraphe"-->
+				<!--Un div "bloc puce" regroupant un div "puces_page" (icone fontawesome) + un div "année"-->
+
+				<article class="article_page" title="Formation">
+					<div class="titre_page">
+						<div class="icone_article"><i class="fas fa-graduation-cap"></i></div>
+						<h3>CURSUS SCOLAIRE</h3>
+					</div>
+					<ul class="liste_page">
+						<li>
+							<div class="item_formation">
+								<!--Création d'un div pour lui appliquer flex, appliquer flex directement à "li" fait disparaitre les puces-->
+								<div class="bloc_puces">
+									<!--L'image de la puce + l'année-->
+									<div class="puces_page">
+										<!--L'image de la puce-->
+										<i class="far fa-dot-circle"></i>
+									</div>
+									<div class="année">
+										<!--L'année-->
+										2020-2021<br />
+									</div>
+								</div>
+
+								<div class="paragraphe">
+									<h4>Université virtuelle du Burkina Faso(UV-BF)</h4><br />
+									<h5>1re année en génie logiciel</h5><br />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item_formation">
+								<div class="bloc_puces">
+									<div class="puces_page">
+										<i class="fas fa-circle fa-xs"></i>
+									</div>
+									<div class="année">
+										2019-2020<br />
+									</div>
+								</div>
+
+								<div class="paragraphe">
+									<h4>School of mamagement(SOM)</h4><br />
+									<h5>Diplôme de bac+2 en génie électrique et informatique industrielle</h5><br />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item_formation">
+								<div class="bloc_puces">
+									<div class="puces_page">
+										<i class="fas fa-circle fa-xs"></i>
+									</div>
+									<div class="année">
+										2018-2019<br />
+									</div>
+								</div>
+
+								<div class="paragraphe">
+									<h4>Lycée Privé Benaja</h4><br />
+									<h5>Baccalautréat D</h5><br />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item_formation">
+								<div class="bloc_puces">
+									<div class="puces_page">
+										<i class="fas fa-circle fa-xs"></i>
+									</div>
+									<div class="année">
+										2015-2016<br />
+									</div>
+								</div>
+
+								<div class="paragraphe">
+									<h4>Lycée Privé Benaja</h4><br />
+									<h5>BEPC</h5><br />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item_formation">
+								<div class="bloc_puces">
+									<div class="puces_page">
+										<i class="fas fa-circle fa-xs"></i>
+									</div>
+									<div class="année">
+										2011-2012<br />
+									</div>
+								</div>
+
+								<div class="paragraphe">
+									<h4>Ecole Privé jules Ferry</h4><br />
+									<h5>CEP</h5><br />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article_page" title="Expérience Professionelle">
+					<div class="titre_page">
+						<div class="icone_article"><i class="fas fa-briefcase"></i></div>
+						<h3>EXPÉRIENCE PROFESSIONNELLE</h3>
+					</div>
+					<ul class="liste_page">
+						<li>
+							<div class="item_professionnel">
+								<!--Création d'un div pour lui appliquer flex, appliquer flex directement à "li" fait disparaitre les puces-->
+								<div class="bloc_puces">
+									<div class="puces_page">
+										<i class="far fa-dot-circle"></i>
+									</div>
+									<div class="année">
+										2020<br />
+									</div>
+								</div>
+
+								<div class="paragraphe">
+									<h4>FAZ Technologies</h4><br />
+									<h5>Stage en maintenance informatique</h5><br />
+									<p> 
+										Installation des systemes d'exploitation, démonter les ordinateurs, 
+										faire la maintenance préventive de l'ordinateur, réparation de certaines pannes
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item_professionnel">
+								<!--Création d'un div pour lui appliquer flex, appliquer flex directement à "li" fait disparaitre les puces-->
+								<div class="bloc_puces">
+									<div class="puces_page">
+										<i class="fas fa-circle fa-xs"></i>
+									</div>
+									<div class="année">
+										2014<br />
+									</div>
+								</div>
+								<div class="paragraphe">
+									<h4>secrétariat Wend-Kuuni</h4><br />
+									<h5>Secrétaire</h5><br />
+									<p>Saisie des documents sur les logiciels bureautiques, formation en bureautique, gestion
+										 de la phototocopie de documents</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article_page" title="Langue">
+					<!--Cet article ne contient pas de liste, uniquement un bloc titre + un bloc item regroupant les différentes entrées dans des balises <p> -->
+					<div class="titre_page">
+						<div class="icone_article"><i class="fas fa-pencil-alt"></i></div>
+						<h3>Langues</h3>
+					</div>
+					<div class="item_recommand">
+						<p>
+							<span>Français</span><br />Lu : Excellent<br />Parlée : Excellent<br />
+							Écrit : Excellent
+						</p>
+						<p>
+							<span>Anglais</span><br />Lu : Moyen<br />Parlée : Moyen<br />
+							Écrit : Moyen
+						</p>
+						<p>
+							<span>Moree</span><br />Lu : Moyen<br />Parlée : Excellent<br />
+							Écrit : Faible
+						</p>
+					</div>
+				</article>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>
